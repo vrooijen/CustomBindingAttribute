@@ -41,7 +41,6 @@ namespace TrackPoc
         {
             var webJobsBuilder = builder.Services.AddWebJobs(_ => { });
 
-            //builder.Services.AddTransient<IMyLogic, MyLogic>();
             webJobsBuilder.Services.AddTransient<IMyLogic, MyLogic>();
 
             webJobsBuilder.AddExtension<MyExtensionProvider>();
